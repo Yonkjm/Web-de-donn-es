@@ -1,0 +1,36 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefiv v: <http://www.vocabulaire.fr#>
+
+<v:Personne> a rdfs:Class;
+
+<v:Homme> a rdfs:Class;
+    rdfs:label "man"@en;
+    rdfs:comment "an adult male person"@en;
+    rdfs:subClassOf <v:Personne>.
+
+<v:Etudiant> a rdfs:Class;
+    rdfs:label "student"@en;
+    rdfs:subClassOf <v:Personne>
+
+<v:Language> a rdfs:Class;
+
+<v:Filliere> a rdfs:Class;
+
+<v:Fillière> a rdf:Property;
+    rdfs:domain <v:Filliere>;
+
+
+<v:Etudie> a rdf:Property;
+    rdfs:label "man"@en;
+    rdfs:comment "an adult male person"@en;
+    rdfs:domain <v:Etudiant>;
+    rdfs:range <v:Spécialité>.
+
+<v:Langage> a rfd:Property;
+    rdfs:domain <v:Etudiant>;
+    rdfs:range <v:Language>;
+
+
+
+
+
